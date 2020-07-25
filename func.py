@@ -3,11 +3,11 @@ import argparse
 
 parser=argparse.ArgumentParser()
 # setting as optional arguments
-parser.add_argument("--type")
-parser.add_argument("--principal")
-parser.add_argument("--periods")
-parser.add_argument("--interest")
-parser.add_argument("--payment")
+parser.add_argument("--type" ,help="type of calculation")
+parser.add_argument("--principal",help="principal amount")
+parser.add_argument("--periods",help="periods")
+parser.add_argument("--interest",help="interest")
+parser.add_argument("--payment",help="monthly payment")
 args=parser.parse_args()
 """
 print('''
